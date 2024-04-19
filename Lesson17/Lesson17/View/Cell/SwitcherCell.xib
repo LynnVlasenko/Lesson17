@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KHS-Kj-SAB" customClass="SwitcherCell" customModule="Lesson17" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KHS-Kj-SAB" id="9Xv-08-T2q">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLu-RI-pLl">
+                        <rect key="frame" x="20" y="0.0" width="296" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vdr-pi-GHs">
+                        <rect key="frame" x="324" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                        <connections>
+                            <action selector="switcherAction:" destination="KHS-Kj-SAB" eventType="valueChanged" id="feg-uo-Tcw"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Vdr-pi-GHs" secondAttribute="trailing" constant="20" symbolic="YES" id="738-ML-6eU"/>
+                    <constraint firstAttribute="bottom" secondItem="kLu-RI-pLl" secondAttribute="bottom" id="GyA-W8-qhr"/>
+                    <constraint firstItem="kLu-RI-pLl" firstAttribute="top" secondItem="9Xv-08-T2q" secondAttribute="top" id="Rpd-Tn-XkT"/>
+                    <constraint firstItem="Vdr-pi-GHs" firstAttribute="centerY" secondItem="9Xv-08-T2q" secondAttribute="centerY" id="tMu-9Y-8RV"/>
+                    <constraint firstItem="kLu-RI-pLl" firstAttribute="leading" secondItem="9Xv-08-T2q" secondAttribute="leading" constant="20" symbolic="YES" id="vPR-M2-wPc"/>
+                    <constraint firstItem="Vdr-pi-GHs" firstAttribute="leading" secondItem="kLu-RI-pLl" secondAttribute="trailing" constant="8" id="z9s-Ij-taR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switcher" destination="Vdr-pi-GHs" id="PJ2-Vn-QoV"/>
+                <outlet property="titleTextLabel" destination="kLu-RI-pLl" id="Kq8-sr-Cub"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="20"/>
+        </tableViewCell>
+    </objects>
+</document>
